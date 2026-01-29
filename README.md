@@ -203,9 +203,7 @@ The placement step focuses on:
 
 ### 🔹 Placement Overview
 
-<p align="center">
-  <img src="Docs/PD/Global_Placement.png" width="600">
-</p>
+![Global Placement](Docs/PD/Global_placement.png)
 
 _Figure: Global placement view showing standard-cell distribution across the core._
 
