@@ -473,18 +473,6 @@ The analysis confirms **negligible IR drop** across both power and ground nets, 
 
 ---
 
-### 🧠 Key Observations
-
-- **All VPWR and VGND shapes are fully connected**
-- Worst-case IR drop is **< 0.01% of supply voltage**
-- No localized power collapse or hot spots detected
-- PDN straps and rails are sufficient for the Wallace Tree datapath
-- Power integrity margins comfortably meet signoff requirements
-
-✅ **Power delivery network validated**
-
----
-
 ## 🔋 Power Analysis
 
 Post-layout power analysis was performed using **OpenROAD STA + RC extraction** across all signoff corners.  
@@ -496,12 +484,6 @@ The design shows **very low power consumption**, which is expected for an 8-bit 
 | Switching Power | 0.377 mW     |
 | Leakage Power   | 3.96 nW      |
 | **Total Power** | **0.889 mW** |
-
-#### 🔍 Key Observations
-
-- **Switching power dominates**, which is typical for arithmetic-heavy datapaths.
-- **Leakage power is negligible**, confirming efficient use of standard cells and absence of unnecessary always-on logic.
-- Pipelining helps reduce glitching and dynamic power by shortening combinational paths.
 
 ---
 
